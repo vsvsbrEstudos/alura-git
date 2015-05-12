@@ -1,14 +1,14 @@
 ## aula 1
 
-Cobriu instalação, configuração e...
+Cobriu instalação, configuração básica (ssh-keygen, bash) e...
 
 ```
 #!bash
- git clone
- git branch
- git checkout [branch]
- git diff [branch1] [branch2]
- git blame [file]
+git clone
+git branch
+git checkout [branch]
+git diff [branch1] [branch2]
+git blame [file]
 
 ```
 
@@ -18,12 +18,12 @@ Cobriu instalação, configuração e...
 
 ```
 #!bash
-  git init
+git init
 
- git add .
- git add -i
- git commit -m
- git log
+git add .
+git add -i
+git commit -m
+git log
 ```
 
 
@@ -48,7 +48,7 @@ remoto
 ```
 #!bash
 
- git clone
- git pull
- git push
+git clone
+git pull
+git push
 ```
