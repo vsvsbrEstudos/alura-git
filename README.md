@@ -23,15 +23,19 @@ git init
 git add .
 git add -i
 git commit -m
-git log
 ```
 
 
 
-##aula 3
+##aula 3 - Repositórios remoto
 
 Alterações no git
-```git whatchanged -p```
+```
+git log
+git whatchanged -p
+```
+
+Criou um repositório no GitHub
 
 ```
 #!bash
@@ -40,6 +44,9 @@ git remote add origin              git@bitbucket.org:vsvsbrEstudoJava/alura-git.
   --->         nome local          remoto
 
 ```
+
+git push origin master
+
 
 
 remoto
