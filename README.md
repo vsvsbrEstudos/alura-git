@@ -37,15 +37,24 @@ git whatchanged -p
 
 Criou um repositório no GitHub
 
+**Bitbucket**:
 ```
 #!bash
-
 git remote add origin              git@bitbucket.org:vsvsbrEstudoJava/alura-git.git
   --->         nome local          remoto
 
+git push origin master
 ```
 
-git push origin master
+**GitHub**:
+```
+#!bash
+git remote add github git@github.com:vsvsbrEstudos/alura-git.git
+
+
+git push github master
+```
+
 
 
 
