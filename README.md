@@ -77,6 +77,8 @@ Criar uma branch: `git branch nome_branch`
 
 Alternar entre branches: `git checkout nome_branch`
 
+Criar uma branch e alternar em um comando: `git checkout -b nome_branch`
+
 Enviar para repositório remoto: `git push origin nome_branch`
 
 Enviar e fazer o ligação com o branch local: `git push -u origin nome_branch`
