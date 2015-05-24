@@ -81,8 +81,10 @@ Criar uma branch e alternar em um comando: `git checkout -b nome_branch`
 
 Enviar para repositório remoto: `git push origin nome_branch`
 
-Enviar e fazer o ligação com o branch local: `git push -u origin nome_branch`
+Enviar e fazer o ligação (track) com o branch local: `git push -u origin nome_branch`
 
 Mostrar branches remotas `git branch -r`
 
-Baixar uma branch remota e ligar com uma branch local: `git branch -t nome_branch origin/nome_branch`
+Baixar uma branch remota e ligar com uma branch local: `git checkout -t origin/nome_branch` ou `git branch -t nome_branch origin/nome_branch`
+
+Apagar branch remota: `git push origin :nome_branch` ou `git push origin --delete nome_branch`
