@@ -112,6 +112,7 @@ ref.: http://www.gitguys.com/topics/merging-with-a-gui/
 ##aula 6 - Boas práticas
 
 Antes da implementação de uma tarefa:
+
 1. cria-se uma branch -- _branch_local_
 2. Faz as alterações
 3. Volta para a master
