@@ -109,4 +109,44 @@ Configurar a ferramenta de merge padrão: `git config --global merge.tool meld`
 
 ref.: http://www.gitguys.com/topics/merging-with-a-gui/
 
+##aula 6 - Boas práticas
+
+Antes da implementação de uma tarefa:
+1. cria-se uma branch -- _branch_local_
+2. Faz as alterações
+3. Volta para a master
+4. Faz o pull para ver atualizações 
+5. Havendo atualizações faz se o rebase `git rebase master branch_local`
+  1. havendo conflitos, vai para a branch local
+  2. resolve o conflito
+  3. continua o rebase com `git rebase --continue`
+6. Volta para a master
+7. Faz o merge com `git merge branch_local`
+8. envia para o servidor
+
+O que faz o rebase:
+> O objetivo com comando git rebase é fazer com que a branch em que se está,
+> tenha um novo HEAD que está em outra branch. Ou seja, a base da branch, a
+> partir da qual você vai realizar seus commits, deverá ser modificada. Para
+> isso, caso haja commits novos na branch que terá a base trocada, o Git
+> coloca seus commits em um local temporário, e em seguida começa a aplicar a
+> nova base. Após a atualização do HEAD, o Git começa a aplicar seus commits
+> sobre a nova base.
+
+Opções do rebase:
+```
+When you have resolved this problem run "git rebase --continue".
+If you would prefer to skip this patch, instead run "git rebase --skip".
+To restore the original branch and stop rebasing run "git rebase --abort".
+```
+
+
+Novos comandos dessa aula:
+```
+git merge
+git rebase master desenvolvimento
+git rebase --continue
+```
+
+
 
