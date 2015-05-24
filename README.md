@@ -68,3 +68,19 @@ git clone
 git pull
 git push
 ```
+
+##aula 4 - Branches
+
+Mostrar branches locais e a usada correntemente: `git branch`
+
+Criar uma branch: `git branch nome_branch`
+
+Alternar entre branches: `git checkout nome_branch`
+
+Enviar para repositório remoto: `git push origin nome_branch`
+
+Enviar e fazer o ligação com o branch local: `git push -u origin nome_branch`
+
+Mostrar branches remotas `git branch -r`
+
+Baixar uma branch remota e ligar com uma branch local: `git branch -t nome_branch origin/nome_branch`
