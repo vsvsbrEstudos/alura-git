@@ -100,6 +100,7 @@ Linhas alteradas localmente
 Linhas alteradas remotamente
 >>>>>>> [sha do commit remoto]
 ```
+-->
 
 Facilitar o merge com `git mergetool -t meld`.
 
@@ -149,5 +150,35 @@ git rebase master desenvolvimento
 git rebase --continue
 ```
 
+##aula 7 - controle de alterações
+
+Desfaz a alteração que está no _unstage_: `git checkout file` 
+
+Caso queira desfazer alterações de um arquivo que tenha o mesmo nome de uma branch, use "--" `git checkout -- file` 
+
+Tira alteração do index e coloca no Working Directory: `git reset HEAD file`
+
+Volta todos os commits até chegar no informado, alterando o index para o commit: `git reset [commit]`
+
+Git reset
+- `--soft` : volta os commits mas deixa os arquivos alterados no Working Directory
+- `--hard` : desfaz os commits e someas alterações
+- `--mixed`: é o default, quando não se coloca nada
 
 
+
+git revert [commit hash] - volta apenas o commit informado
+
+git stash - guarda as alterações que não foram commitadas em uma área a parte
+git stash list - mostra arquivos guardados
+
+git stash pop --> volta o último stash
+git stash apply [stash name] --> volta stash específico
+git stash drop -- apaga o stash
+
+
+bisect -- ajuda a procurar por uma alteração nos commits
+
+git bisect start
+git bisect bad [hash] 
+git bisect good [hash]
