@@ -14,7 +14,8 @@ git blame [file]
 
 ## aula 2 - Ciclo básico
 
-
+- Working tree ou working directory
+- index ou staging area
 
 ```
 #!bash
@@ -160,12 +161,10 @@ Tira alteração do index e coloca no Working Directory: `git reset HEAD file`
 
 Volta todos os commits até chegar no informado, alterando o index para o commit: `git reset [commit]`
 
-Git reset
-- `--soft` : volta os commits mas deixa os arquivos alterados no Working Directory
-- `--hard` : desfaz os commits e someas alterações
-- `--mixed`: é o default, quando não se coloca nada
-
-
+Git reset e seus parâmetros:
+- `--mixed`: é o default, quando não se coloca nada, atualiza o index para a situação do `[commit]` informado
+- `--soft` : volta os commits mas não mexe nos arquivos do Working Directory e nem do index
+- `--hard` : desfaz os commits e apaga qualquer alteração feita no working directory e do index colocando-os no mesmo estado do `[commit]`
 
 git revert [commit hash] - volta apenas o commit informado
 
