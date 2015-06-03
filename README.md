@@ -14,6 +14,8 @@ git blame [file]
 
 ## aula 2 - Ciclo básico
 
+![Ciclo de vida dos arquivos](img/git-status-lifecycle.png)
+
 - Working tree ou working directory
 - index ou staging area
 
@@ -162,18 +164,31 @@ Tira alteração do index e coloca no Working Directory: `git reset HEAD file`
 Volta todos os commits até chegar no informado, alterando o index para o commit: `git reset [commit]`
 
 Git reset e seus parâmetros:
+- `--mixed`: é o default, quando não se coloca nada, atualiza o Working Directory com as alterações, o index fica no `[commit]`
+- `--soft` : volta alterações para o index e não mexe nos arquivos do Working Directory
+- `--hard` : apaga qualquer alteração feita no working directory e do index, colocando-os no mesmo estado do `[commit]` 
+
+----
+**Melhorar e validar essa situação**:
+
+Git reset e seus parâmetros, _com commit_:
 - `--mixed`: é o default, quando não se coloca nada, atualiza o index para a situação do `[commit]` informado
 - `--soft` : volta os commits mas não mexe nos arquivos do Working Directory e nem do index
-- `--hard` : desfaz os commits e apaga qualquer alteração feita no working directory e do index colocando-os no mesmo estado do `[commit]`
 
-git revert [commit hash] - volta apenas o commit informado
+---
 
-git stash - guarda as alterações que não foram commitadas em uma área a parte
-git stash list - mostra arquivos guardados
 
-git stash pop --> volta o último stash
-git stash apply [stash name] --> volta stash específico
-git stash drop -- apaga o stash
+`git revert [commit hash]` - volta apenas o commit informado
+
+
+###git stash
+- `git stash` - guarda as alterações que não foram commitadas (Working Directory e Index) em uma área a parte
+- `git stash list` - mostra arquivos guardados
+
+- `git stash pop` --> volta o último stash
+- `git stash apply [stash name]` --> volta stash específico
+- `git stash drop` --> apaga o stash
+- `git stash clear` --> apaga todos os estados.
 
 
 bisect -- ajuda a procurar por uma alteração nos commits
