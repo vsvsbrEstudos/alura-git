@@ -228,6 +228,7 @@ Pode-se encadear comandos como no shell para formar _aliases_ mais interessantes
 - `pub-dsv = !git checkout master && git pull && git checkout dsv && git rebase master && git checkout master && git merge dsv && git push`
 
 ### Log
+O log ajuda na visualização dos commits principalmente com contribuições de outros commiters.
 
 - comando simples: `git log`
 - para ver as alterações: `git log -p`
