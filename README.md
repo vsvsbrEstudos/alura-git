@@ -196,3 +196,44 @@ bisect -- ajuda a procurar por uma alteração nos commits
 git bisect start
 git bisect bad [hash] 
 git bisect good [hash]
+
+
+Referências:
+- Git Reset: https://git-scm.com/book/pt-br/v1/Git-Internamente-Manuten%C3%A7%C3%A3o-e-Recupera%C3%A7%C3%A3o-de-Dados
+- Git bisect: http://imasters.com.br/artigo/24741/desenvolvimento/dica-git-da-semana-git-bisect/
+- Atlassian: https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting
+
+
+##aula 8 - fork e pull
+
+### Fork
+Caso queira contribuir para um projeto que não é o dono, portanto não tem permissão para alterar, faça um fork pela interface do GitHub ou Bitbucket. Isso criará uma cópia do projeto no seu perfil. Depois é só clonar e trabalhar.
+
+Para manter atualizado com a origem, adicione mais um projeto remoto.
+
+Projeto e depois utilize utilizado para clonar um projeto direto no servidor github ou bitbucket. 
+Assim é possível fazer um commit em um projeto
+
+### Alias
+
+É possível criar _aliases_ para encurtar comandos do git ou para executar vários.
+
+- editar o arquivo `~\.gitconfig`
+- acrescentar a seção `[Alias]`
+- acrescentar o alias e o comando:
+    - `st=status` --> `git status` --> `git st`
+    - `lp=log --pretty
+
+Pode-se encadear comandos como no shell para formar _aliases_ mais interessantes: 
+- `pub-dsv = !git checkout master && git pull && git checkout dsv && git rebase master && git checkout master && git merge dsv && git push`
+
+### Log
+
+Fork + pull requests
+
+##aula 9 - 
+- passa alterações de um branch para o master `git cherry-pick [hash]`
+
+##aula 10 - interface gráfica
+- ferramenta do git hub?
+
