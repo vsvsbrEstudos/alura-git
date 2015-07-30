@@ -229,7 +229,17 @@ Pode-se encadear comandos como no shell para formar _aliases_ mais interessantes
 
 ### Log
 
-Fork + pull requests
+- comando simples: `git log`
+- para ver as alterações: `git log -p`
+- quantidade de linhas alterados ou removidas: `git log --stat`
+- `git log --pretty=oneline`
+- `git log --pretty='%an realizou commit em %ad: %s' --graph`
+    - %an: autor
+    - %ad: data do commit
+    - %s: mensagem
+    - --graph: alinha os branches e merges
+    
+
 
 ##aula 9 - 
 - passa alterações de um branch para o master `git cherry-pick [hash]`
