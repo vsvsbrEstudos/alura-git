@@ -1,3 +1,10 @@
+## Introdução
+Essas são minhas notas sobre o curso do Alura "Git: Trabalho em Equipe com Controle e Segurança".
+
+Armazenei essas notas no README.md de:
+- https://github.com/vsvsbrEstudos/alura-git
+- https://bitbucket.org/vsvsbrEstudos/alura-git
+
 ## aula 1
 
 Cobriu instalação, configuração básica (ssh-keygen, bash) e...
@@ -241,10 +248,18 @@ O log ajuda na visualização dos commits principalmente com contribuições de 
     - --graph: alinha os branches e merges
     
 
-
 ##aula 9 - 
-- passa alterações de um branch para o master `git cherry-pick [hash]`
+- passar um commit específico para outro branch
+    - ir para o branch que se quer o commit
+    - executar `git cherry-pick [hash]`
 
 ##aula 10 - interface gráfica
-- ferramenta do git hub?
+- fui apresentado ao git-cola
+    - não conhecia e não funcionou a instalação no Arch
+        - não tive muito interesse
+    - parece que uma interface gráfica não suaviza o aprendizado do Git
+
+## extra - help
+
+`git help gitrevisions`
 
